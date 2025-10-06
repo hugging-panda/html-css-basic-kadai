@@ -23,6 +23,11 @@ body {
   margin: 0;
 }
 
+main {
+  padding: 10px;
+}
+
+
 h2 {
   font-size: 25px;
   border-bottom: 3px dotted rgb(236, 122, 122);
@@ -44,11 +49,11 @@ h2::before {
   flex-basis: 25%;
   padding: 10px 15px;
   margin: 20px 0;
-  justify-content: center
+  text-align: center;
 }
 
-div p:nth-of-type(2)::first-letter{
-  font: bold;
+.contents p:nth-of-type(2)::first-letter{
+  font-weight: bold;
   color: rgb(97, 206, 249);
 }
 
@@ -59,7 +64,7 @@ div p:nth-of-type(2)::first-letter{
 
 footer {
   background-color: rgb(244, 79, 79);
-  justify-content: center;
+  text-align: center;
 }
 
 a:link {
@@ -84,6 +89,7 @@ p {
 }
 
 #parent {
-  display: inline-block;
+   display: flex;
+  flex-direction: column;
 }
 }
