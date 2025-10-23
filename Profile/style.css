@@ -1,0 +1,78 @@
+.logo {
+  width: 120px;
+  height: auto;
+  padding: 10px;
+}
+
+img {
+  width: 100%;   /* 画面幅いっぱいに広げる */
+  height: auto;  /* 縦横比を維持 */
+  display: block; /* 余白を消す（重要） */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+html {
+  font-family:"Arial", "Hiragino Kaku Gothic ProN", "游ゴシック体", "sans-serif";
+  color: #383E45;
+  display:flex;
+  justify-content: center;
+}
+
+#mainvisual {
+  width:100%
+  height: 600px;
+}
+
+.parent {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.child {
+  padding: 5px;
+   margin: 5px;
+}
+
+.circle-img {
+  width: 100px;       /* 好きなサイズに調整 */
+  height: 100px;      /* widthと同じにするのがポイント */
+  border-radius: 50%; /* これで完全な円形に！ */
+  object-fit: cover;  /* はみ出し部分をトリミングして中央表示 */
+  padding: 5px;
+  margin: 5px;
+}
+
+@media screen and (max-width:1024px){
+.parent {
+  flex-direction: column;
+}  
+.child {
+  align-self:center;
+}
+.circle-img {
+  align-self:center;
+}
+}
