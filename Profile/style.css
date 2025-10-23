@@ -4,6 +4,10 @@
   padding: 10px;
 }
 
+a {
+    margin: 10px;
+}
+
 img {
   width: 100%;   /* 画面幅いっぱいに広げる */
   height: auto;  /* 縦横比を維持 */
@@ -11,12 +15,14 @@ img {
 }
 
 header {
+  margin: 0 20px;
   display: flex;
   justify-content: space-between;
 }
 
 h2 {
   font-size: 32px;
+  text-decoration: underline;
   display: flex;
   justify-content: center;
 }
